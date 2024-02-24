@@ -36,15 +36,15 @@ export default function Home() {
           </Link>
           <a className='bg-orange-500 text-teal-50 text-sm py-2 px-4 inline-block font-semibold rounded text-center' target='_blank' href="https://drive.google.com/file/d/1CUomu4RUgVVJF8L7qLR8JZ_2CTUv0JLj/view?usp=sharing"><FontAwesomeIcon icon={faDownload} width={15} className='inline-block' /> Download PDF</a>
           <div className="text-xs text-center mt-4">
-            <p className='text-sm'>
+            <p className='text-sm text-teal-100'>
               Karangan Guru Besar <strong>Dr. Shalih bin Abdul Aziz bin Utsman As-Sindi</strong> Bidang Aqidah di Universitas Islam Madinah
             </p>
-            <p className='text-xs mt-2'>Diterjemah oleh Para Mahasiswa Al - Muzany Mataram</p>
+            <p className='text-xs mt-2 text-teal-300'>Diterjemah oleh Para Mahasiswa Al - Muzany Mataram</p>
           </div>
         </div>
 
         <div className="video flex flex-col justify-center items-center mt-4">
-          <h2 className='text-lg'>Video kitab</h2>
+          <h2 className='text-lg text-teal-200 font-semibold'>Video Kitab</h2>
           <iframe className='w-60 border-2 rounded' src="https://www.youtube.com/embed/ngssPQUfN2g?si=YWZkU9s1qRC9dNR3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
       </div>

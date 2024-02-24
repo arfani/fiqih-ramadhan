@@ -30,7 +30,7 @@ export default function FiqihRamadhan() {
               <span className='bg-teal-800 p-2'>{item.title}</span>
             </div>
           </Accordion.Title>
-          <Accordion.Content className='backdrop-contrast-125 overflow-auto max-h-[calc(100vh-15rem)] [&>p]:indent-7 [&>p]:text-justify [&>p]:mb-3 [&>p]:leading-5'>
+          <Accordion.Content className='text-teal-100 backdrop-contrast-125 overflow-auto max-h-[calc(100vh-15rem)] [&>p]:indent-7 [&>p]:text-justify [&>p]:mb-3 [&>p]:leading-5'>
             {item.content}
             <div className="mt-8 ml-2">
               <Tooltip content="Mutarjim" className='bg-teal-600 text-teal-50' placement='right'>
