@@ -7,6 +7,7 @@ import { Accordion, Badge, Tooltip } from 'flowbite-react';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 import { Pembahasan1 } from './contents/pembahasan1';
+import Image from 'next/image';
 
 export default function FiqihRamadhan() {
   interface pembahasanProps {
@@ -44,6 +45,12 @@ export default function FiqihRamadhan() {
   }
   return (
     <div className="w-full px-4 py-8 overflow-auto">
+      
+      <div className="logo text-center mb-3 flex flex-col items-center">
+        <Image src={'/images/logo-al-muzany.png'} width={100} height={100} alt='Logo Mahad Al Muzany' />
+        <h1 className='text-teal-50 font-bold'>{`Ma'had Al-Muzany Mataram`}</h1>
+      </div>
+      
       <h1 className='text-center sm:text-2xl mb-4 font-semibold text-teal-100 bg-teal-700 w-fit mx-auto px-4 py-2 border-b-2 border-teal-200 rounded'>Terjemah Kitab 10 Masalah Penting Terkait Puasa Ramadhan</h1>
       <Accordion className='focus:outline-none focus:[&_*]:!outline-none [&_button]:focus:!ring-transparent max-w-5xl mx-auto'>
         {Panel()}

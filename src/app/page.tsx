@@ -11,8 +11,11 @@ export default function Home() {
       </div>
       <div className="relative z-10 flex flex-col justify-center items-center font-serif p-4">
 
-        <Image src={'/images/logo-al-muzany.png'} width={100} height={100} alt='Logo Mahad Al Muzany' />
-        <h1 className='text-teal-50 mb-3 font-bold'>{`Ma'had Al-Muzany Mataram`}</h1>
+        <div className="logo text-center mb-3 flex flex-col items-center">
+          <Image src={'/images/logo-al-muzany.png'} width={100} height={100} alt='Logo Mahad Al Muzany' />
+          <h1 className='text-teal-50 font-bold'>{`Ma'had Al-Muzany Mataram`}</h1>
+        </div>
+
         <Card className="w-md hidden md:flex text-teal-100 bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400 mb-3" imgSrc="/images/cover-10-masalah-puasa.png" horizontal>
           <h2 className="text-xl font-bold tracking-tight text-teal-300 capitalize">
             Terjemah kitab 10 masalah penting terkait puasa ramadhan
