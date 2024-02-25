@@ -6,10 +6,10 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen bg-[url('/images/bg.jpeg')] bg-cover">
+    <main className="w-screen h-screen bg-[url('/images/bg.jpeg')] bg-cover overflow-auto">
       <div className="fixed inset-0 bg-gray-800 bg-opacity-90">
       </div>
-      <div className="relative z-10 flex flex-col justify-center items-center h-full font-serif overflow-auto p-4">
+      <div className="relative z-10 flex flex-col justify-center items-center font-serif p-4">
 
         <Card className="w-md hidden md:flex text-teal-100 bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400 mb-3" imgSrc="/images/cover-10-masalah-puasa.png" horizontal>
           <h5 className="text-xl font-bold tracking-tight text-teal-300">
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </Card>
 
-        <div className="box md:hidden flex flex-col bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400">
+        <div className="box md:hidden flex flex-col bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400 ">
           <h5 className="text-xl font-bold tracking-tight text-teal-300 text-center capitalize">
             Terjemah kitab 10 masalah penting terkait puasa ramadhan
           </h5>
