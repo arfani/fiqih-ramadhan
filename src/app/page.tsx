@@ -11,10 +11,12 @@ export default function Home() {
       </div>
       <div className="relative z-10 flex flex-col justify-center items-center font-serif p-4">
 
+        <Image src={'/images/logo-al-muzany.png'} width={100} height={100} alt='Logo Mahad Al Muzany' />
+        <h1 className='text-teal-50 mb-3 font-bold'>{`Ma'had Al-Muzany Mataram`}</h1>
         <Card className="w-md hidden md:flex text-teal-100 bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400 mb-3" imgSrc="/images/cover-10-masalah-puasa.png" horizontal>
-          <h5 className="text-xl font-bold tracking-tight text-teal-300 capitalize">
+          <h2 className="text-xl font-bold tracking-tight text-teal-300 capitalize">
             Terjemah kitab 10 masalah penting terkait puasa ramadhan
-          </h5>
+          </h2>
           <p className='text-sm'>
             Karangan Guru Besar <strong>Dr. Shalih bin Abdul Aziz bin Utsman As-Sindi</strong> Bidang Aqidah di Universitas Islam Madinah
           </p>
@@ -28,9 +30,9 @@ export default function Home() {
         </Card>
 
         <div className="box md:hidden flex flex-col bg-gray-500 bg-opacity-30 p-4 shadow-md shadow-teal-400 ">
-          <h5 className="text-xl font-bold tracking-tight text-teal-300 text-center capitalize">
+          <h2 className="text-xl font-bold tracking-tight text-teal-300 text-center capitalize">
             Terjemah kitab 10 masalah penting terkait puasa ramadhan
-          </h5>
+          </h2>
           <Link href={'/fiqih-ramadhan'}>
             <button className='bg-teal-600 w-full text-sm text-teal-100 py-2 px-4 rounded font-semibold tracking-widest hover:scale-105 duration-100 my-2'><FontAwesomeIcon icon={faBook} className='inline-block' width={15} /> BACA</button>
           </Link>
