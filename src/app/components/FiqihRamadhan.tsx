@@ -7,10 +7,12 @@ import { Accordion, Badge, Tooltip } from 'flowbite-react';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 import { Pembahasan1 } from './contents/pembahasan1';
+import { Pembahasan10 } from './contents/pembahasan10';
 import Image from 'next/image';
 
 export default function FiqihRamadhan() {
   interface pembahasanProps {
+    pembahasanKe: string,
     title: string,
     mutarjim: string,
     socmedLink: string,
@@ -18,7 +20,8 @@ export default function FiqihRamadhan() {
   }
 
   const pembahasanAll: pembahasanProps[] = [
-    { title: 'Penentuan Awal Bulan', mutarjim: 'rfun', socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
+    { pembahasanKe: 'Pertama',title: 'Penentuan awal bulan', mutarjim: 'rfun', socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
+    { pembahasanKe: 'Kesepuluh',title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
   ]
 
   const Panel = () => {
@@ -27,7 +30,7 @@ export default function FiqihRamadhan() {
         <Accordion.Panel key={item.mutarjim}>
           <Accordion.Title className='bg-teal-400 text-teal-100 font-semibold hover:bg-teal-500 drop-shadow-lg shadow-orange-500 focus:ring-0'>
             <div className="flex flex-col sm:flex-row">
-              <span className='text-teal-800 bg-teal-300 p-2'>Pembahasan Pertama :</span>
+              <span className='text-teal-800 bg-teal-300 p-2'>Pembahasan {item.pembahasanKe} :</span>
               <span className='bg-teal-800 p-2'>{item.title}</span>
             </div>
           </Accordion.Title>
@@ -35,7 +38,7 @@ export default function FiqihRamadhan() {
             {item.content}
             <div className="mt-8 ml-2">
               <Tooltip content="Mutarjim" className='bg-teal-600 text-teal-50' placement='right'>
-                <a href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={faGlobe} className='mr-1' />{item.mutarjim}</Badge></a>
+                <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={faGlobe} className='mr-1' />{item.mutarjim}</Badge></a>
               </Tooltip>
             </div>
           </Accordion.Content>
