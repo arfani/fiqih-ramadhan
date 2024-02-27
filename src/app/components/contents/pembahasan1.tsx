@@ -5,7 +5,7 @@ import { FC } from 'react'
 export const Pembahasan1: FC = () => {
     return (
         <>
-            <h2 className='font-bold mb-2'>2 cara penentuan awal bulan :</h2>
+            <h2 className='font-bold mb-2 text-lg'>2 cara penentuan awal bulan :</h2>
             <ol className='list-decimal list-inside mb-2'>
                 <li className='font-semibold'>Melihat Hilal</li>
                 <li className='font-semibold'>Menyempurnakan Bulan {"Sya'ban"} menjadi 30 hari</li>

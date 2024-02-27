@@ -23,8 +23,8 @@ export default function FiqihRamadhan() {
   }
 
   const pembahasanAll: pembahasanProps[] = [
-    { pembahasanKe: 'Pertama', title: 'Penentuan awal bulan', mutarjim: 'rfun', socmedIcon: faGlobe, socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
-    { pembahasanKe: 'Kedua', title: 'Puasa pada hari yang diragukan', mutarjim: 'Abu Ibrohim', socmedIcon: faGlobe, socmedLink: '#', content: <Pembahasan2 /> },
+    { pembahasanKe: 'Pertama', title: 'Penentuan awal bulan', mutarjim: 'Arfan Abu Abdillah', socmedIcon: faGlobe, socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
+    { pembahasanKe: 'Kedua', title: 'Puasa pada hari yang diragukan', mutarjim: 'Abu Ibrohim', socmedIcon: null, socmedLink: '#', content: <Pembahasan2 /> },
     { pembahasanKe: 'Kesepuluh', title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedIcon: faLinkedin, socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
   ]
 
