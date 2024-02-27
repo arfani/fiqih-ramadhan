@@ -7,38 +7,47 @@ import { Accordion, Badge, Tooltip } from 'flowbite-react';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 import { Pembahasan1 } from './contents/pembahasan1';
+import { Pembahasan2 } from './contents/pembahasan2';
 import { Pembahasan10 } from './contents/pembahasan10';
 import Image from 'next/image';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function FiqihRamadhan() {
   interface pembahasanProps {
     pembahasanKe: string,
     title: string,
     mutarjim: string,
+    socmedIcon: any,
     socmedLink: string,
     content: ReactNode,
   }
 
   const pembahasanAll: pembahasanProps[] = [
-    { pembahasanKe: 'Pertama',title: 'Penentuan awal bulan', mutarjim: 'rfun', socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
-    { pembahasanKe: 'Kesepuluh',title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
+    { pembahasanKe: 'Pertama', title: 'Penentuan awal bulan', mutarjim: 'rfun', socmedIcon: faGlobe, socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
+    { pembahasanKe: 'Kedua', title: 'Puasa pada hari yang diragukan', mutarjim: 'Abu Ibrohim', socmedIcon: faGlobe, socmedLink: '#', content: <Pembahasan2 /> },
+    { pembahasanKe: 'Kesepuluh', title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedIcon: faLinkedin, socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
   ]
 
   const Panel = () => {
     return pembahasanAll.map((item: pembahasanProps) => {
       return (
         <Accordion.Panel key={item.mutarjim}>
-          <Accordion.Title className='bg-teal-400 text-teal-100 font-semibold hover:bg-teal-500 drop-shadow-lg shadow-orange-500 focus:ring-0'>
+          <Accordion.Title className='bg-teal-400 text-teal-100 font-semibold hover:bg-teal-500 drop-shadow-lg shadow-orange-500 focus:ring-0 [&>h2]:!w-full'>
             <div className="flex flex-col sm:flex-row">
               <span className='text-teal-800 bg-teal-300 p-2'>Pembahasan {item.pembahasanKe} :</span>
               <span className='bg-teal-800 p-2'>{item.title}</span>
+              <span className="ml-auto mr-4 hidden md:inline-block">
+                <Tooltip content="Mutarjim" className='' placement='left'>
+                  <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />{item.mutarjim}</Badge></a>
+                </Tooltip>
+              </span>
             </div>
           </Accordion.Title>
           <Accordion.Content className='text-teal-100 backdrop-contrast-125 overflow-auto max-h-[calc(100vh-15rem)] [&>p]:indent-7 [&>p]:text-justify [&>p]:mb-3 [&>p]:leading-5'>
             {item.content}
             <div className="mt-8 ml-2">
               <Tooltip content="Mutarjim" className='bg-teal-600 text-teal-50' placement='right'>
-                <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={faGlobe} className='mr-1' />{item.mutarjim}</Badge></a>
+                <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />{item.mutarjim}</Badge></a>
               </Tooltip>
             </div>
           </Accordion.Content>
@@ -48,12 +57,12 @@ export default function FiqihRamadhan() {
   }
   return (
     <div className="w-full px-4 py-8 overflow-auto">
-      
+
       <div className="logo text-center mb-3 flex flex-col items-center">
         <Image src={'/images/logo-al-muzany.png'} width={100} height={100} alt='Logo Mahad Al Muzany' />
         <h1 className='text-teal-50 font-bold'>{`Ma'had Al-Muzany Mataram`}</h1>
       </div>
-      
+
       <h1 className='text-center sm:text-2xl mb-4 font-semibold text-teal-100 bg-teal-700 w-fit mx-auto px-4 py-2 border-b-2 border-teal-200 rounded'>Terjemah Kitab 10 Masalah Penting Terkait Puasa Ramadhan</h1>
       <Accordion className='focus:outline-none focus:[&_*]:!outline-none [&_button]:focus:!ring-transparent max-w-5xl mx-auto'>
         {Panel()}
