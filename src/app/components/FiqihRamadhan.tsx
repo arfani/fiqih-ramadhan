@@ -10,7 +10,8 @@ import { Pembahasan1 } from './contents/pembahasan1';
 import { Pembahasan2 } from './contents/pembahasan2';
 import { Pembahasan10 } from './contents/pembahasan10';
 import Image from 'next/image';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Pembahasan7 } from './contents/pembahasan7';
 
 export default function FiqihRamadhan() {
   interface pembahasanProps {
@@ -25,9 +26,10 @@ export default function FiqihRamadhan() {
   const pembahasanAll: pembahasanProps[] = [
     { pembahasanKe: 'Pertama', title: 'Penentuan awal bulan', mutarjim: 'Arfan Abu Abdillah', socmedIcon: faGlobe, socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
     { pembahasanKe: 'Kedua', title: 'Puasa pada hari yang diragukan', mutarjim: 'Abu Ibrohim', socmedIcon: null, socmedLink: '#', content: <Pembahasan2 /> },
+    { pembahasanKe: 'Ketujuh', title: 'Pembatal-pembatal puasa', mutarjim: 'Abdul Waris', socmedIcon: faFacebook, socmedLink: 'https://www.facebook.com/profile.php?id=100079236276527', content: <Pembahasan7 /> },
     { pembahasanKe: 'Kesepuluh', title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedIcon: faLinkedin, socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
   ]
-
+  
   const Panel = () => {
     return pembahasanAll.map((item: pembahasanProps) => {
       return (
@@ -38,16 +40,16 @@ export default function FiqihRamadhan() {
               <span className='bg-teal-800 p-2'>{item.title}</span>
               <span className="ml-auto mr-4 hidden md:inline-block">
                 <Tooltip content="Mutarjim" className='' placement='left'>
-                  <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />{item.mutarjim}</Badge></a>
+                  <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg">{ item.socmedIcon && <FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />}{item.mutarjim}</Badge></a>
                 </Tooltip>
               </span>
             </div>
           </Accordion.Title>
-          <Accordion.Content className='text-teal-100 backdrop-contrast-125 overflow-auto max-h-[calc(100vh-15rem)] [&>p]:indent-7 [&>p]:text-justify [&>p]:mb-3 [&>p]:leading-5'>
+          <Accordion.Content className='text-teal-100 backdrop-contrast-125 overflow-auto max-h-[calc(100vh-15rem)] [&>p]:indent-7 [&>p]:text-justify [&>p]:mb-3 [&>p]:leading-5 leading-10 [&_p]:leading-10'>
             {item.content}
             <div className="mt-8 ml-2">
               <Tooltip content="Mutarjim" className='bg-teal-600 text-teal-50' placement='right'>
-                <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg"><FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />{item.mutarjim}</Badge></a>
+                <a target='_blank' href={item.socmedLink} className='inline-block font-semibold cursor-pointer'><Badge color="info" size="lg">{ item.socmedIcon && <FontAwesomeIcon icon={item.socmedIcon} className='mr-1' />}{item.mutarjim}</Badge></a>
               </Tooltip>
             </div>
           </Accordion.Content>
