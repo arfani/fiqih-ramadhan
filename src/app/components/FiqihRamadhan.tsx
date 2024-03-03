@@ -14,6 +14,8 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Pembahasan7 } from './contents/pembahasan7';
 import { Pembahasan6 } from './contents/pembahasan6';
 import { Pembahasan3 } from './contents/pembahasan3';
+import { Pembahasan4 } from './contents/pembahasan4';
+import { Pembahasan8 } from './contents/pembahasan8';
 
 export default function FiqihRamadhan() {
   interface pembahasanProps {
@@ -29,15 +31,17 @@ export default function FiqihRamadhan() {
     { pembahasanKe: 'Pertama', title: 'Penentuan awal bulan', mutarjim: 'Arfan Abu Abdillah', socmedIcon: faGlobe, socmedLink: 'https://arfani.github.io', content: <Pembahasan1 /> },
     { pembahasanKe: 'Kedua', title: 'Puasa pada hari yang diragukan', mutarjim: 'Abu Ibrohim', socmedIcon: null, socmedLink: '#', content: <Pembahasan2 /> },
     { pembahasanKe: 'Ketiga', title: 'Bagaimana Hukum Puasa bagi orang yg sakit dan lemah/Lansia?', mutarjim: 'Muhamad Anjung', socmedIcon: faFacebook, socmedLink: 'https://www.facebook.com/muhamad.anjung.9', content: <Pembahasan3 /> },
+    { pembahasanKe: 'Keempat', title: 'Berpuasa atau tidaknya orang yang Musafir', mutarjim: 'Ruslan Abdul Ghani', socmedIcon: null, socmedLink: '#', content: <Pembahasan4 /> },
     { pembahasanKe: 'Keenam', title: 'Puasa Wanita haid Dan Nifas', mutarjim: 'Ruslan Abdul Ghani', socmedIcon: null, socmedLink: '#', content: <Pembahasan6 /> },
     { pembahasanKe: 'Ketujuh', title: 'Pembatal-pembatal puasa', mutarjim: 'Abdul Waris', socmedIcon: faFacebook, socmedLink: 'https://www.facebook.com/profile.php?id=100079236276527', content: <Pembahasan7 /> },
+    { pembahasanKe: 'Kedelapan', title: 'Qhada', mutarjim: 'Aji Indra Saputra', socmedIcon: null, socmedLink: '#', content: <Pembahasan8 /> },
     { pembahasanKe: 'Kesepuluh', title: 'Sunah-sunah puasa dan adab-adabnya', mutarjim: 'Abu Rumaysha', socmedIcon: faLinkedin, socmedLink: 'https://www.linkedin.com/in/ahmad-subki-56a124142/', content: <Pembahasan10 /> },
   ]
   
   const Panel = () => {
     return pembahasanAll.map((item: pembahasanProps) => {
       return (
-        <Accordion.Panel key={item.mutarjim}>
+        <Accordion.Panel key={item.pembahasanKe}>
           <Accordion.Title className='bg-teal-400 text-teal-100 font-semibold hover:bg-teal-500 drop-shadow-lg shadow-orange-500 focus:ring-0 [&>h2]:!w-full'>
             <div className="flex flex-col sm:flex-row">
               <span className='text-teal-800 bg-teal-300 p-2'>Pembahasan {item.pembahasanKe} :</span>
