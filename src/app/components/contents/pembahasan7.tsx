@@ -11,7 +11,7 @@ export const Pembahasan7: FC = () => {
                 Pembatal yg pertama: Makan dan Minum
             </p>
 
-            <p>{`Sebagaimana firman Allah <span className='text-[9px]'>ﷻ</span> dalam surat Al Baqoroh ayat 187 yg artinya "maka makan dan minumlah kalian sampai jelas benang putih dan benang hitam diwaktu fajr"`}</p>
+            <p>Sebagaimana firman Allah <span className='text-[9px]'>ﷻ</span> dalam surat Al Baqoroh ayat 187 yg artinya {`"maka makan dan minumlah kalian sampai jelas benang putih dan benang hitam diwaktu fajr"`}</p>
 
             <p>
                 Para ulama telah sepakat bahwasanya makan dan minum bisa mebatalkan puasa, jika dilakukan diantar fajr sampai tenggelam matahari.
@@ -22,7 +22,7 @@ export const Pembahasan7: FC = () => {
             </p>
 
             <p>
-                {`* jika orang yg berpuasa makan dan minum dalam keadaan lupa maka mereka selayaknya melanjutkan puasanya dan tidak ada hukum padanya, karena sesungguhnya Allah <span className='text-[9px]'>ﷻ</span> telah memberikan keringanan padanya bahkan Allah <span className='text-[9px]'>ﷻ</span> lah yg telah memberikan makan baginya, sebagaimana  sabda Rosulullah <span className='text-[9px]'>ﷺ</span> "barang siapa yang makan dan minum dalam keadaan lupa maka sempurnakanlah puasanya, karena sesungguhnya Allah <span className='text-[9px]'>ﷻ</span> lah yg telah meberikannya makan dan memberikannya minum.`}
+                * jika orang yg berpuasa makan dan minum dalam keadaan lupa maka mereka selayaknya melanjutkan puasanya dan tidak ada hukum padanya, karena sesungguhnya Allah <span className='text-[9px]'>ﷻ</span> telah memberikan keringanan padanya bahkan Allah <span className='text-[9px]'>ﷻ</span> lah yg telah memberikan makan baginya, sebagaimana  sabda Rosulullah <span className='text-[9px]'>ﷺ</span> {`"barang`} siapa yang makan dan minum dalam keadaan lupa maka sempurnakanlah puasanya, karena sesungguhnya Allah <span className='text-[9px]'>ﷻ</span> lah yg telah meberikannya makan dan memberikannya {`minum"`}.
             </p>
 
             <p>
@@ -39,9 +39,11 @@ export const Pembahasan7: FC = () => {
                 Diantaranya pengobatan denga system suntikan yang dengannya dimasukkan saripati makanan contohnya infus atau yang semisalnya. Pengabotan dengan metode ini membatalkan puasa, oleh karenanya tidak boleh bagi orang yg sedang berpuasa untuk melakukannya jika dia bisa menunda sampai terggelam matahari. Adapun jika tidak mampu menundanya karena menderita rasa sakit jika menundanya maka kami sarankan untuk melakukannya dengan konsekwensi puasanya batal.
             </p>
             <p>
-                {`Juga ada masalah yg berkaitan dengan pengobatan yang bukan infus. Yaitu yang berupa obat, yang bukan berisi saripati makanan seperti sesuatu yang dimasukkan melalui pembuluh darah atau urat nadi. Dalam hal inilah para ulama berselisih pendapat, dan perselisihan dalam hal ini panjang. Dan pendapat yg lebih dekat dengan kebenaran (hanya Allah <span className='text-[9px]'>ﷻ</span> yg maha mengetahui) yaitu fatwa ulama kontemporer bahwa *metode suntikan yg bukan berisi saripati makanan tidak mebatalkan"`}
+                Juga ada masalah yg berkaitan dengan pengobatan yang bukan infus. Yaitu yang berupa obat, yang bukan berisi saripati makanan seperti sesuatu yang dimasukkan melalui pembuluh darah atau urat nadi. Dalam hal inilah para ulama berselisih pendapat, dan perselisihan dalam hal ini panjang. Dan pendapat yg lebih dekat dengan kebenaran (hanya Allah <span className='text-[9px]'>ﷻ</span> yg maha mengetahui) yaitu fatwa ulama kontemporer bahwa {`*metode suntikan yg bukan berisi saripati makanan tidak mebatalkan"`}
             </p>
-            <p>{`Oleh karenanya bila kaum muslimin butuh untuk melakukannya pada siang hari ramadhan maka tidak mengapa, dan  tidak menyebakan puasanya batal. Dan siapa yang ingin lebih berhati hati, jika ia bisa menunda sampai waktu berbuka maka ini lebih utama sebagai hadits Rosulullah <span className='text-[9px]'>ﷺ</span> "tinggalkan apa yang meragukanmu kepada sesuatu yang tidak meragukanmu"`}</p>
+            <p>
+                Oleh karenanya bila kaum muslimin butuh untuk melakukannya pada siang hari ramadhan maka tidak mengapa, dan  tidak menyebakan puasanya batal. Dan siapa yang ingin lebih berhati hati, jika ia bisa menunda sampai waktu berbuka maka ini lebih utama sebagai hadits Rosulullah <span className='text-[9px]'>ﷺ</span> {`"tinggalkan apa yang meragukanmu kepada sesuatu yang tidak meragukanmu"`}
+            </p>
             <p>
                 Dan juga seperti masalah  mengambil darah dengan metode suntik dan yang semisal (seperti donor darah). Apakah membatalkan puasa atau tidak? Maka jawabannya adalah IYA karena mengambil darah seperti ini mebatalkan puasa, karena darah adalah mengandung saripati yang dihasilkan dari makanan, oleh karenanya   orang yang melakukannya sungguh ia telah mendapatkan saripati makanan, seperti orang yang makan atau seperti hukum orang yang makan sehingga mendapatkan faedah dari makannya.
             </p>
@@ -80,8 +82,8 @@ export const Pembahasan7: FC = () => {
             <p>
                 {`Inilah urutan yang wajib dilakukan atas orang yang melakukan hubungan badan tersebut, yaitu taubat, lalu mengganti (qodo') dan kafaroh. Dan atas istrinya sebagaimana yang berlaku pada suaminya kecuali dia melakukannya dibawah tekanan suami yaitu benar benar dipaksa, bukan sekedar pengakuan, maka wajib baginya sekedar mengganti puasanya saja.`}
             </p>
-            <p>{`
-                        Jika dia tidak mampu puasa dua bulan berturut turut, seakan dia berkata "puasa memberatkanku pada selain bulan ramadhan" maka kita katakan ini adalah masalah syariat agama, ini urusan antamu dengan Allah <span className='text-[9px]'>ﷻ</span> dan Dia maha tau apakah engkau benar benar mampu atau tidak, kami hanya menyampaikan padamu jika tidak mampu lakukanlah perkara yang ketiga yaitu engkau wajib memberi makan 60 orang miskin sebagaiman yang telah dijelaskan pada bab memberi makan diatas.`}
+            <p>
+                Jika dia tidak mampu puasa dua bulan berturut turut, seakan dia berkata {`"puasa memberatkanku pada selain bulan ramadhan"`} maka kita katakan ini adalah masalah syariat agama, ini urusan antamu dengan Allah <span className='text-[9px]'>ﷻ</span> dan Dia maha tau apakah engkau benar benar mampu atau tidak, kami hanya menyampaikan padamu jika tidak mampu lakukanlah perkara yang ketiga yaitu engkau wajib memberi makan 60 orang miskin sebagaimana yang telah dijelaskan pada bab memberi makan diatas.
             </p>
             <p>
                 Yang berkaitan dengan masalah jimak ialah tentang masalah bercumbu rayu, baik dengan ciuman, pelukan atau meraba raba atau yang semisal dengan itu, yang mengakibatkan keluar mani maka wajib baginya untuk mengganti puasanya, oleh karena hal tersebut dia membatalkan puasanya dengan sengaja, maka pertama tama wajib atasnya bertaubat kepada Allah <span className='text-[9px]'>ﷻ</span> lalu dia mengganti puasanya tanpa ada kafaroh atasnya karena kafaroh hanya berkaitan dengan jimak saja atau dengan syarat masuknya kemaluan, maka jika sudah masuk baik sampai keluar atau tidak mani maka telah jelas kafaroh baginya.
@@ -107,7 +109,7 @@ export const Pembahasan7: FC = () => {
                 Pembatal yang ketiga: Keluarnya mani bukan karena jimak atau bercumbu rayu
             </p>
             <p>
-                {`Seperti onani, maka onani haram pada luar bulan ramadhan, dan lebih haram pada waktu berpuasa dan wajib bagi pelakunya qodo' disertai wajib taubat kepada Allah <span className='text-[9px]'>ﷻ</span>`}
+                Seperti onani, maka onani haram pada luar bulan ramadhan, dan lebih haram pada waktu berpuasa dan wajib bagi pelakunya {`qodo'`} disertai wajib taubat kepada Allah <span className='text-[9px]'>ﷻ</span>
             </p>
             <p>
                 Lalu bagaimana dengan orang yang mimpi basah atau yang disebut dalam bahasa arab dengan Muhtalim?
@@ -143,7 +145,7 @@ export const Pembahasan7: FC = () => {
                 Gambaran yang kedua yaitu muntah yang bukan keinginannya atau tidak disengaja maka dalam hal ini jika ada rasa mual atau perrasaan ingin muntah maka tidak boleh dia memaksa dikeluarkan karena bisa membahayakannya, dan jika dia mengeluarkan tanpa di paksa maka tidak mengapa insya Allah <span className='text-[9px]'>ﷻ</span>.
             </p>
             <p>
-                {`Pembatal yang ke enam yaitu bekam. Bekam sudah dikenal yaitu cara mengeluarkan darah, dan bekam yang benar menurut pendapat ulama adalah membatalkan puasa, sebagaimana ditopang oleh hadits Rosulullah <span className='text-[9px]'>ﷺ</span> "tukang bekam dan yang dibekam telah batal puasanya", oleh karenanya tidak boleh bagi seseorang yang sedang berpuasa untuk berbekam pada siang hari ramadhan kecuali pada keadaan darurat dan dokter mengatakan tidak ada obat pada penyakitnya kecuali dengan dibekam atau yang semisal dengan bekam seperti donor darah sebagaimana yang diketahui bahwa donor darah adalah mengeluarkan darah dari urat nadi atau yang semisal maka tentunya dalam keadaan ini berbekam di prioritaskan untuk dilakukan dengan konsekwensi puasanya tetap batal dan wajib mengganti puasanya. Wallahu 'alam.`}
+                Pembatal yang ke enam yaitu bekam. Bekam sudah dikenal yaitu cara mengeluarkan darah, dan bekam yang benar menurut pendapat ulama adalah membatalkan puasa, sebagaimana ditopang oleh hadits Rosulullah <span className='text-[9px]'>ﷺ</span> {`"tukang bekam dan yang dibekam telah batal puasanya"`}, oleh karenanya tidak boleh bagi seseorang yang sedang berpuasa untuk berbekam pada siang hari ramadhan kecuali pada keadaan darurat dan dokter mengatakan tidak ada obat pada penyakitnya kecuali dengan dibekam atau yang semisal dengan bekam seperti donor darah sebagaimana yang diketahui bahwa donor darah adalah mengeluarkan darah dari urat nadi atau yang semisal maka tentunya dalam keadaan ini berbekam di prioritaskan untuk dilakukan dengan konsekwensi puasanya tetap batal dan wajib mengganti puasanya. {`Wallahu 'alam`}.
             </p>
         </>
     )

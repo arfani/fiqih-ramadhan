@@ -16,7 +16,7 @@ export const Pembahasan2: FC = () => {
             </p>
 
             <p>
-                {`Dalilnya adalah dari hadits ‘Ammar bin Yaasir –radhiallahu ‘anhu- bahwasanya Nabi <span className='text-[9px]'>ﷺ</span> bersabda : Barangsiapa  yang berpuasa pada hari yang diragukan (30 ramadhan) maka sungguh ia telah mendurhakai Abul Qoosim (Rasulullah <span className='text-[9px]'>ﷺ</span>)`}
+                Dalilnya adalah dari hadits {`‘Ammar bin Yaasir –radhiallahu ‘anhu-`} bahwasanya Nabi <span className='text-[9px]'>ﷺ</span> bersabda : Barangsiapa  yang berpuasa pada hari yang diragukan (30 ramadhan) maka sungguh ia telah mendurhakai Abul Qoosim (Rasulullah <span className='text-[9px]'>ﷺ</span>)
             </p>
 
             <p>

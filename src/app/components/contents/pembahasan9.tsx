@@ -6,9 +6,9 @@ export const Pembahasan9: FC = () => {
     return (
         <>
             <p>
-                {
-                    `Sebagai seorang muslim wajib berniat untuk melakukan ibadah  puasanya, sebagaimana hadits nabi <span className='text-[9px]'>ﷺ</span> "setiap amalan wajib disertai niat". Pembahasannya adalah apakah wajib berniat setiap hari yaitu berniat terlebih dahulu pada malam harinya? Atau cukup dengan memasang niat sekalian saja untuk 1 bulan pada awal ramadhan?`
-                }
+
+                Sebagai seorang muslim wajib berniat untuk melakukan ibadah  puasanya, sebagaimana hadits nabi <span className='text-[9px]'>ﷺ</span> {`"setiap amalan wajib disertai niat"`}. Pembahasannya adalah apakah wajib berniat setiap hari yaitu berniat terlebih dahulu pada malam harinya? Atau cukup dengan memasang niat sekalian saja untuk 1 bulan pada awal ramadhan?
+
             </p>
 
             <p>
